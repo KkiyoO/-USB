@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2月のカレンダー</title>
+</head>
+<body>
+    <div id="calendar"></div>
+    <script src=calendar.js></script>
+</body>
+<style>
+    /*表の枠の消去　border-spacing:0でも可能*/
+table{
+    border-collapse: collapse;
+}
+
+
+/*表の枠線作成,文字のフォントや大きさの指定*/
+td{
+border:1px solid #000000;/*フォントの色指定*/
+padding: 5px;/*フォントの大きさ指定*/
+text-align:center;/*数値の中央に配置*/
+}
+table tr td:nth-of-type(1)/*1列目を指定*/ 
+{
+    color: #ff0000;/*赤色に変化*/
+}
+
+table tr td:nth-of-type(7){/*最終列を指定*/
+    color: #0066ff;/*青色に変化*/
+}
+
+</style>
+
+</html>
